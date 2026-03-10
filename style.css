@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +6,24 @@
 
 body {
     font-family: sans-serif;
-    background-color: #FFFFFF;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
 }
 
-main {
+/* Section must cover the full viewport to show the background change */
+#main-section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .container {
     text-align: center;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); /* Added transparency for better look */
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(240, 1, 1, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 h2 {
@@ -33,15 +32,15 @@ h2 {
 }
 
 #color-display {
-    color: #0eab03;
+    color: #f1f5f8; /* Changed for better contrast */
     font-weight: bold;
 }
 
 .btn {
     padding: 0.75rem 1.5rem;
-    border: 2px solid #222;
+    border: 2px solid #ffffff;
     background: transparent;
-    color: #ebebeb;
+    color: #ffffff;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
@@ -50,6 +49,6 @@ h2 {
 }
 
 .btn:hover {
-    background: #222;
-    color: #fff;
+    background: #ffffff;
+    color: #222;
 }
